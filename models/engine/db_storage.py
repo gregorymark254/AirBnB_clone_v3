@@ -77,4 +77,8 @@ class DBStorage:
 
     def get(self, cls, id):
         """retrieve an object from the database based on its id"""
-        
+        obj = self._session.query(cls).filter(cls.id == id).first()
+        if obj is not None:
+            return obj
+        else:
+            return None
