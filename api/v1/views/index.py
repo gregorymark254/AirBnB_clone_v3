@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+contains the app blueprints
+"""
 from api.v1.views import app_views
 from flask import jsonify
 from ..app import app

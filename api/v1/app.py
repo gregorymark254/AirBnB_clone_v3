@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+contains an flask app
+"""
 from flask import make_response, jsonify, Flask
 from models import storage
 from api.v1.views import app_views
