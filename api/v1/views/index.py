@@ -11,6 +11,7 @@ def status():
 
 @app.route('/api/v1/stats')
 def retrieve():
+    """returns the no. of items in classes"""
     new_dict = {}
     for obj in classes:
         total = count(obj)
